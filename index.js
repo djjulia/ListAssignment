@@ -23,11 +23,20 @@ function App() {
     setValue('');
   }
 
+  const handleRemove = index => {
+    const updatedTodos = [...todos];
+    updatedTodos.splice(index, 1);
+    setTodos(updatedTodos);
+  }
+
   return (
     <div className="app">
       <div className="todo-list">
         {todos.map((todo, i) => (
-          <div className="todo" key={i}>{todo.text}</div>
+          <div className="todo" key={i}>
+            <span>{todo.text}</span>
+            <button onClick={() => handleRemove(i)}>Remove</button>
+          </div>
         ))}
         <form onSubmit={handleSubmit}>
           <input
