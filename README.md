@@ -12,7 +12,7 @@ To get started with the Awesome Todo List App, follow these simple steps:
 
 Clone this repository to your local machine:
 
-git clone https://github.com/your-username/awesome-todo-list.git
+git clone https://github.com/your-username/awesome-todo-list.git](https://github.com/djjulia/ListAssignment.git
 Navigate to the project directory:
 
 
